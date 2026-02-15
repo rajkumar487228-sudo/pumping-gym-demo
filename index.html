@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pumping Gym</title>
+<title>Patel Digital Studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
@@ -10,21 +10,40 @@ margin:0;
 font-family:Arial, sans-serif;
 background:#0f0f0f;
 color:white;
-text-align:center;
 }
 
-/* Header */
-header{
-background:linear-gradient(90deg,#ff3c00,#ff8c00);
-padding:20px;
-font-size:24px;
+/* NAVIGATION */
+nav{
+background:#000;
+padding:15px 0;
+display:flex;
+justify-content:center;
+gap:40px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
 font-weight:bold;
+transition:0.3s;
 }
 
-/* Hero */
+nav a:hover{
+color:#ff3c00;
+}
+
+/* HERO */
 .hero{
-padding:100px 20px;
-background:url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1200') center/cover no-repeat;
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1400') center/cover no-repeat;
+text-align:center;
 position:relative;
 }
 
@@ -35,7 +54,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.7);
+background:rgba(0,0,0,0.75);
 }
 
 .hero-content{
@@ -44,24 +63,23 @@ z-index:2;
 }
 
 .hero h1{
-font-size:45px;
+font-size:48px;
 margin-bottom:15px;
 }
 
 .hero p{
 color:#ccc;
 font-size:18px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .btn{
 background:#ff3c00;
-padding:15px 30px;
+padding:15px 35px;
 color:white;
 text-decoration:none;
 border-radius:30px;
 font-weight:bold;
-display:inline-block;
 transition:0.3s;
 }
 
@@ -69,22 +87,28 @@ transition:0.3s;
 background:#ff6a00;
 }
 
-/* Section */
+/* SECTION */
 .section{
 padding:70px 20px;
+text-align:center;
 }
 
-/* Cards */
+.section h2{
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* SERVICES */
 .cards{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:25px;
 }
 
 .card{
 background:#1a1a1a;
-padding:25px;
+padding:30px;
 border-radius:15px;
 width:280px;
 box-shadow:0 0 20px rgba(255,60,0,0.4);
@@ -95,43 +119,49 @@ transition:0.3s;
 transform:translateY(-10px);
 }
 
-.price{
-font-size:20px;
-color:#ff8c00;
-margin-top:10px;
+/* TESTIMONIALS */
+.testimonial{
+background:#1a1a1a;
+margin:20px auto;
+padding:25px;
+border-radius:12px;
+width:85%;
+max-width:500px;
+box-shadow:0 0 20px rgba(255,60,0,0.3);
 }
 
-/* Gallery */
-.gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:50px 20px;
+/* CONTACT */
+.contact{
 background:#000;
+padding:60px 20px;
 }
 
-.gallery img{
-width:300px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(255,60,0,0.5);
-transition:0.3s;
+.contact input, .contact textarea{
+width:80%;
+padding:12px;
+margin:10px;
+border-radius:6px;
+border:none;
 }
 
-.gallery img:hover{
-transform:scale(1.05);
+.contact button{
+padding:12px 30px;
+background:#ff3c00;
+border:none;
+color:white;
+border-radius:30px;
+cursor:pointer;
 }
 
-/* Footer */
+/* FOOTER */
 footer{
 background:#111;
 padding:20px;
+text-align:center;
 color:#777;
-font-size:14px;
-margin-top:40px;
 }
 
-/* WhatsApp */
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -142,7 +172,6 @@ padding:15px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 
 </style>
@@ -150,50 +179,66 @@ box-shadow:0 0 10px rgba(0,0,0,0.5);
 
 <body>
 
-<header>🏆 Pumping Gym</header>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Testimonials</a>
+<a href="#">Contact</a>
+</nav>
 
-<!-- Hero -->
 <div class="hero">
 <div class="hero-content">
-<h1>Transform Your Body</h1>
-<p>Build Strength • Burn Fat • Boost Confidence</p>
-<a href="#" class="btn">Join Now</a>
+<h1>Patel Digital Studio</h1>
+<p>Professional Websites • YouTube Growth • Digital Solutions</p>
+<a href="#" class="btn">Get Started</a>
 </div>
 </div>
 
-<!-- Services -->
 <div class="section">
 <h2>Our Services</h2>
-
 <div class="cards">
-
 <div class="card">
-<h3>💪 Weight Training</h3>
-<div class="price">₹999 / month</div>
-</div>
-
-<div class="card">
-<h3>🏃 Cardio Zone</h3>
-<div class="price">₹799 / month</div>
+<h3>🌐 Website Design</h3>
+<p>Modern responsive business websites</p>
 </div>
 
 <div class="card">
-<h3>🔥 Personal Trainer</h3>
-<div class="price">₹2999 / month</div>
+<h3>📈 YouTube Growth</h3>
+<p>Channel optimization & strategy</p>
+</div>
+
+<div class="card">
+<h3>💻 Landing Pages</h3>
+<p>High converting lead pages</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>What Clients Say</h2>
+
+<div class="testimonial">
+⭐️⭐️⭐️⭐️⭐️  
+"Best website developer! Very professional work."
+</div>
+
+<div class="testimonial">
+⭐️⭐️⭐️⭐️⭐️  
+"My business sales increased after website launch!"
 </div>
 
 </div>
-</div>
 
-<!-- Gallery -->
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=600">
-<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=600">
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600">
+<div class="contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<textarea rows="4" placeholder="Your Message"></textarea><br>
+<button>Send Message</button>
 </div>
 
 <footer>
-© 2026 Pumping Gym | Designed by Patel Digital Studio
+© 2026 Patel Digital Studio | All Rights Reserved
 </footer>
 
 <a href="https://wa.me/919278338860" target="_blank" class="whatsapp">
